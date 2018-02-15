@@ -1,0 +1,2445 @@
+15:59:53 **** Build of project bert_bsp ****
+make -k all 
+"Running Make include in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+15:59:58 **** Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3144	    316	   3108	   6568	   19a8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:00:07 **** Clean-only build of configuration Debug for project bert ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  bert.elf.size  bert.elf
+' '
+16:00:07 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3144	    316	   3108	   6568	   19a8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:00:28 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3144	    316	   3108	   6568	   19a8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:01:59 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:00:23 **** Clean-only build of project bert_bsp ****
+make -k clean 
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f h_microblaze_microblaze_0/lib/libxil.a
+17:00:24 **** Clean-only build of configuration Debug for project bert ****
+make clean 
+rm -rf  ./src/bert.o ./src/platform.o  ./src/bert.d ./src/platform.d  bert.elf.size  bert.elf
+' '
+17:00:24 **** Build of project bert_bsp ****
+make -k all 
+"Running Make include in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:00:31 **** Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:00:36 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:01:37 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:11:14 **** Clean-only build of project bert_bsp ****
+make -k clean 
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f h_microblaze_microblaze_0/lib/libxil.a
+09:11:15 **** Clean-only build of configuration Debug for project bert ****
+make clean 
+rm -rf  ./src/bert.o ./src/platform.o  ./src/bert.d ./src/platform.d  bert.elf.size  bert.elf
+' '
+09:11:15 **** Build of project bert_bsp ****
+make -k all 
+"Running Make include in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:11:21 **** Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:13:25 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:13:43 **** Auto Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:14:33 **** Auto Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:14:44 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c:1:18: fatal error: bert.h: No such file or directory
+ #include "bert.h"
+                  ^
+compilation terminated.
+make: *** [src/bert.o] Error 1
+09:15:03 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:15:30 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3152	    316	   3108	   6576	   19b0	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:18:08 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:38:13: error: lvalue required as left operand of assignment
+  if (Init() = !XST_FAILURE)
+             ^
+At top level:
+../src/bert.c:27:16: warning: 'TimerCounter' defined but not used [-Wunused-variable]
+ static XTmrCtr TimerCounter;  // The instance of the Tmrctr Device
+                ^~~~~~~~~~~~
+../src/bert.c:26:14: warning: 'Gpio' defined but not used [-Wunused-variable]
+ static XGpio Gpio;      // The Instance of the GPIO Driver
+              ^~~~
+../src/bert.c:25:14: warning: 'InterruptController' defined but not used [-Wunused-variable]
+ static XIntc InterruptController;  // Instance of the Interrupt Controller
+              ^~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+09:18:46 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:38:13: error: lvalue required as left operand of assignment
+  if (Init() = !XST_FAILURE)
+             ^
+make: *** [src/bert.o] Error 1
+09:19:02 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `Init':
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:70: undefined reference to `SetUpInterruptSystem'
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:99: undefined reference to `lcd_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+09:19:24 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `Init':
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:99: undefined reference to `lcd_init'
+./src/bert.o: In function `SetUpInterruptSystem':
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:119: undefined reference to `DeviceDriverHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+09:19:43 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `SetUpInterruptSystem':
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:115: undefined reference to `DeviceDriverHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+09:20:37 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11300	    356	   3336	  14992	   3a90	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:21:14 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'DeviceDriverHandler':
+../src/bert.c:155:2: error: unknown type name 'int32'
+  int32 count;
+  ^~~~~
+make: *** [src/bert.o] Error 1
+09:22:11 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11296	    356	   3332	  14984	   3a88	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:22:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11296	    356	   3332	  14984	   3a88	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:23:05 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:23:57 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11328	    356	   3332	  15016	   3aa8	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:24:58 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `main':
+D:\Projects\Bean\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:46: undefined reference to `delay_ms'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+09:25:21 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12664	    356	   3332	  16352	   3fe0	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:25:25 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+09:26:05 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12668	    356	   3336	  16360	   3fe8	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:30:16 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:44:3: warning: implicit declaration of function 'EnableTest' [-Wimplicit-function-declaration]
+   EnableTest();
+   ^~~~~~~~~~
+../src/bert.c: At top level:
+../src/bert.c:216:6: warning: conflicting types for 'EnableTest'
+ void EnableTest(void)
+      ^~~~~~~~~~
+../src/bert.c:44:3: note: previous implicit declaration of 'EnableTest' was here
+   EnableTest();
+   ^~~~~~~~~~
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12724	    356	   3336	  16416	   4020	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:30:29 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12724	    356	   3336	  16416	   4020	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:31:25 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'DeviceDriverHandler':
+../src/bert.c:177:32: error: 'count' undeclared (first use in this function)
+   xil_printf("0x%02X\tping\n", count);
+                                ^~~~~
+../src/bert.c:177:32: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/bert.o] Error 1
+09:31:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12784	    356	   3340	  16480	   4060	bert.elf
+'Finished building: bert.elf.size'
+' '
+09:33:01 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12832	    356	   3340	  16528	   4090	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:24:23 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12832	    356	   3340	  16528	   4090	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:26:11 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.h:54:0: warning: "INTC_DEVICE_INT_ID" redefined
+ #define INTC_DEVICE_INT_ID   0
+ 
+../src/bert.h:49:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_INT_ID   XPAR_INTC_SINGLE_DEVICE_ID
+ 
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12832	    356	   3340	  16528	   4090	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:26:43 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12832	    356	   3340	  16528	   4090	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:31:24 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13108	    356	   3344	  16808	   41a8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:33:42 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `delay_ms':
+C:\SharedProjects\Sadias_Directory\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:228: undefined reference to `xdelay_ms'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+16:34:19 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12060	    356	   3344	  15760	   3d90	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:39:53 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12072	    356	   3340	  15768	   3d98	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:43:46 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12072	    356	   3340	  15768	   3d98	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:48:15 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12072	    356	   3340	  15768	   3d98	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:54:47 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:56:15 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:56:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12020	    356	   3344	  15720	   3d68	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:57:04 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:58:28 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12140	    356	   3344	  15840	   3de0	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:00:23 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12584	    356	   3340	  16280	   3f98	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:00:36 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:04:20 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:52:4: warning: implicit declaration of function 'xil_print' [-Wimplicit-function-declaration]
+    xil_print("---InterruptProcesse = %i---\r\n", InterruptProcessed);
+    ^~~~~~~~~
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `main':
+C:\SharedProjects\Sadias_Directory\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:212: undefined reference to `xil_print'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+17:04:28 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:52:4: warning: implicit declaration of function 'xil_print' [-Wimplicit-function-declaration]
+    xil_print("---InterruptProcesse = %d---\r\n", InterruptProcessed);
+    ^~~~~~~~~
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/bert.o: In function `main':
+C:\SharedProjects\Sadias_Directory\BERT\project_3\project_3.sdk\bert\Debug/../src/bert.c:212: undefined reference to `xil_print'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bert.elf] Error 1
+17:05:51 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12644	    356	   3344	  16344	   3fd8	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:06:08 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:06:34 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12584	    356	   3340	  16280	   3f98	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:07:12 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12584	    356	   3340	  16280	   3f98	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:12:53 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12584	    356	   3340	  16280	   3f98	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:13:14 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:22:22 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12584	    356	   3340	  16280	   3f98	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:34:05 **** Build of project bert_bsp ****
+make -k all 
+"Running Make include in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:34:28 **** Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12616	    356	   3340	  16312	   3fb8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:48:20 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13088	    356	   3340	  16784	   4190	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:50:04 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13088	    356	   3340	  16784	   4190	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:56:52 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12856	    356	   3332	  16544	   40a0	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:57:49 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:01:04 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:14:07 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12856	    356	   3332	  16544	   40a0	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:14:13 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:15:56 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:17:18 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12856	    356	   3332	  16544	   40a0	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:17:22 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:18:23 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12808	    356	   3332	  16496	   4070	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:18:31 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12860	    356	   3336	  16552	   40a8	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:18:39 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+12:57:16 **** Build of project bert_bsp ****
+make -k all 
+"Running Make include in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/bram_v4_1/src"
+make -C h_microblaze_microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/cpu_v2_6/src"
+make -C h_microblaze_microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/gpio_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/intc_v3_6/src"
+make -C h_microblaze_microblaze_0/libsrc/intc_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/standalone_v6_3/src"
+make -C h_microblaze_microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src"
+make -C h_microblaze_microblaze_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src"
+make -C h_microblaze_microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+12:57:32 **** Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'SetUpInterruptSystem':
+../src/bert.c:146:18: warning: unknown escape sequence: '\d'
+  else{xil_printf("\driver handler is connected\n");
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bert.c:269:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../src/bert.c:265:6: warning: 'xdelay_ms' defined but not used [-Wunused-function]
+ void xdelay_ms(u32 time)
+      ^~~~~~~~~
+../src/bert.c:255:6: warning: 'EnableTest' defined but not used [-Wunused-function]
+ void EnableTest(void)
+      ^~~~~~~~~~
+../src/bert.c:244:6: warning: 'delay_ms' defined but not used [-Wunused-function]
+ void delay_ms(u32 time) {
+      ^~~~~~~~
+../src/bert.c:226:6: warning: 'delay_us' defined but not used [-Wunused-function]
+ void delay_us(u32 time) {
+      ^~~~~~~~
+../src/bert.c:191:6: warning: 'DeviceDriverHandler' defined but not used [-Wunused-function]
+ void DeviceDriverHandler(void *CallbackRef) {
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+12:59:45 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'SetUpInterruptSystem':
+../src/bert.c:146:18: warning: unknown escape sequence: '\d'
+  else{xil_printf("\driver handler is connected\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/bert.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12912	    356	   3332	  16600	   40d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:00:56 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+13:02:35 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+../src/bert.c: In function 'SetUpInterruptSystem':
+../src/bert.c:146:18: warning: unknown escape sequence: '\d'
+  else{xil_printf("\driver handler is connected\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bert.c:172:18: warning: unknown escape sequence: '\s'
+  else{xil_printf("\start the interrupt controller in real mode\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12928	    356	   3332	  16616	   40e8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:02:42 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+13:03:52 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+../src/bert.c: In function 'SetUpInterruptSystem':
+../src/bert.c:146:18: warning: unknown escape sequence: '\d'
+  else{xil_printf("\driver handler is connected\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bert.c:172:18: warning: unknown escape sequence: '\s'
+  else{xil_printf("\start the interrupt controller in real mode\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12928	    356	   3332	  16616	   40e8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:05:53 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+../src/bert.c: In function 'SetUpInterruptSystem':
+../src/bert.c:172:18: warning: unknown escape sequence: '\s'
+  else{xil_printf("\start the interrupt controller in real mode\n");}
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12928	    356	   3332	  16616	   40e8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:07:10 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12976	    356	   3332	  16664	   4118	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:35:50 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12976	    356	   3332	  16664	   4118	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:03:51 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12976	    356	   3332	  16664	   4118	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:19:52 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12976	    356	   3332	  16664	   4118	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:38:15 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12976	    356	   3332	  16664	   4118	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:49:16 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13196	    356	   3336	  16888	   41f8	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:49:26 **** Incremental Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i;
+      ^
+In file included from ../src/bert.c:23:0:
+../src/bert.c: In function 'Init':
+../src/bert.h:47:37: error: invalid suffix "_DEVICE_ID" on integer constant
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                                     ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:26: error: 'XPAR_INTC_' undeclared (first use in this function)
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                          ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:26: note: each undeclared identifier is reported only once for each function it appears in
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                          ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:37: error: expected ')' before numeric constant
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                                     ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+15:54:18 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+In file included from ../src/bert.c:23:0:
+../src/bert.c: In function 'Init':
+../src/bert.h:47:37: error: invalid suffix "_DEVICE_ID" on integer constant
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                                     ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:26: error: 'XPAR_INTC_' undeclared (first use in this function)
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                          ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:26: note: each undeclared identifier is reported only once for each function it appears in
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                          ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+../src/bert.h:47:37: error: expected ')' before numeric constant
+ #define INTC_DEVICE_ID   XPAR_INTC_ 0_DEVICE_ID
+                                     ^
+../src/bert.c:83:50: note: in expansion of macro 'INTC_DEVICE_ID'
+  Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+15:57:00 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13200	    356	   3332	  16888	   41f8	bert.elf
+'Finished building: bert.elf.size'
+' '
+15:59:20 **** Incremental Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13200	    356	   3332	  16888	   41f8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:01:35 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:05:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:06:10 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:07:18 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:07:23 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:20:01 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13140	    356	   3336	  16832	   41c0	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:34:25 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:46:51 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13140	    356	   3336	  16832	   41c0	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:46:57 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:47:10 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12980	    356	   3336	  16672	   4120	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:47:28 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:49:14 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12964	    356	   3336	  16656	   4110	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:52:37 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12964	    356	   3336	  16656	   4110	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:52:50 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+16:54:38 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12964	    356	   3336	  16656	   4110	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:56:24 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12964	    356	   3336	  16656	   4110	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:56:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13020	    356	   3336	  16712	   4148	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:57:11 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:13:21 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13180	    356	   3336	  16872	   41e8	bert.elf
+'Finished building: bert.elf.size'
+' '
+17:13:35 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+17:13:48 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13020	    356	   3336	  16712	   4148	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:06:24 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+12:08:58 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+12:40:10 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13196	    356	   3336	  16888	   41f8	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:41:05 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:41:43 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+12:42:00 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.
+12:47:46 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:50:41 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:51:34 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+12:53:44 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:07:36 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.h:26:13: error: expected identifier or '(' before numeric constant
+ #define LOW 0
+             ^
+../src/bert.h:33:9: note: in expansion of macro 'LOW'
+        (LOW << 4) |
+         ^~~
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+../src/bert.c: In function 'Init':
+../src/bert.c:115:11: warning: implicit declaration of function 'SetUpInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetUpInterruptSystem(&InterruptController);
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+13:46:11 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:47:22 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:49:27 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.c: In function 'main':
+../src/bert.h:27:28: error: expected ')' before numeric constant
+ #define GPIO_2_DDR (0x0000 0000 00 \
+                            ^
+../src/bert.c:44:28: note: in expansion of macro 'GPIO_2_DDR'
+   xil_printf("\r bit \%i", GPIO_2_DDR);
+                            ^~~~~~~~~~
+../src/bert.c:66:2: error: expected ')' before '}' token
+  }
+  ^
+../src/bert.c:66:2: error: expected ';' before '}' token
+../src/bert.c:35:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [src/bert.o] Error 1
+13:50:08 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.c: In function 'main':
+../src/bert.h:27:28: error: expected ')' before numeric constant
+ #define GPIO_2_DDR (0x0000 0000 00 \
+                            ^
+../src/bert.c:44:31: note: in expansion of macro 'GPIO_2_DDR'
+   xil_printf("\r bit \%i \n", GPIO_2_DDR);
+                               ^~~~~~~~~~
+../src/bert.c:66:2: error: expected ')' before '}' token
+  }
+  ^
+../src/bert.c:66:2: error: expected ';' before '}' token
+../src/bert.c:35:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [src/bert.o] Error 1
+13:50:18 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:52:49 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.h:25:16: error: expected identifier or '(' before numeric constant
+ #define OUTBIT 0
+                ^
+../src/bert.h:29:18: note: in expansion of macro 'OUTBIT'
+                 (OUTBIT << 8 )  /* bit9 for rst_1 on address counter */
+                  ^~~~~~
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+../src/bert.c: In function 'Init':
+../src/bert.c:116:11: warning: implicit declaration of function 'SetUpInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetUpInterruptSystem(&InterruptController);
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+13:53:08 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.h:25:16: error: expected identifier or '(' before numeric constant
+ #define OUTBIT 0
+                ^
+../src/bert.h:29:18: note: in expansion of macro 'OUTBIT'
+                 (OUTBIT << 8 )  /* bit9 for rst_1 on address counter */
+                  ^~~~~~
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+../src/bert.c: In function 'Init':
+../src/bert.c:116:11: warning: implicit declaration of function 'SetUpInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetUpInterruptSystem(&InterruptController);
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+13:53:45 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+In file included from ../src/bert.c:23:0:
+../src/bert.h:25:16: error: expected identifier or '(' before numeric constant
+ #define OUTBIT 0
+                ^
+../src/bert.h:29:18: note: in expansion of macro 'OUTBIT'
+                 (OUTBIT << 8 )  /* bit9 for rst_1 on address counter */
+                  ^~~~~~
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+../src/bert.c: In function 'Init':
+../src/bert.c:116:11: warning: implicit declaration of function 'SetUpInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetUpInterruptSystem(&InterruptController);
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/bert.o] Error 1
+13:56:18 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:56:44 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:57:01 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+13:57:59 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:19:00 **** Auto Build of configuration Debug for project bert ****
+make all 
+'Building file: ../src/bert.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bert.o" -I../../bert_bsp/h_microblaze_microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bert.d" -MT"src/bert.o" -o "src/bert.o" "../src/bert.c"
+../src/bert.c: In function 'main':
+../src/bert.c:35:6: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  int i=0;
+      ^
+'Finished building: ../src/bert.c'
+' '
+'Building target: bert.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bert_bsp/h_microblaze_microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bert.elf"  ./src/bert.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bert.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bert.elf  |tee "bert.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13168	    356	   3332	  16856	   41d8	bert.elf
+'Finished building: bert.elf.size'
+' '
+16:19:21 **** Incremental Build of configuration Debug for project bert ****
+make all 
+make: Nothing to be done for `all'.

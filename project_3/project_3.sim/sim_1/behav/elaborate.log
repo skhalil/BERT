@@ -1,0 +1,80 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 5425bfb36e674583bb390de17388c34e --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot tb_err_behav xil_defaultlib.tb_err -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110000...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000100000000000")(0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_address_counter_0_0_address_counter [design_1_address_counter_0_0_add...]
+Compiling architecture structure of entity xil_defaultlib.design_1_address_counter_0_0 [design_1_address_counter_0_0_def...]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,init_00="011...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_top [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0 [design_1_blk_mem_gen_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_serial_pipeline_delay_0_0_serial_pipeline_delay [design_1_serial_pipeline_delay_0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_serial_pipeline_delay_0_0 [design_1_serial_pipeline_delay_0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101100001000")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.design_1_dr_make8_1_0_dr_make8 [design_1_dr_make8_1_0_dr_make8_d...]
+Compiling architecture structure of entity xil_defaultlib.design_1_dr_make8_1_0 [design_1_dr_make8_1_0_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.design_1_util_vector_logic_1_0_util_vector_logic_v2_0_1_util_vector_logic [design_1_util_vector_logic_1_0_u...]
+Compiling architecture structure of entity xil_defaultlib.design_1_util_vector_logic_1_0 [design_1_util_vector_logic_1_0_d...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111000111000011110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111110001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.design_1_count_ones_8_0_0_count_ones_8 [design_1_count_ones_8_0_0_count_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_count_ones_8_0_0 [design_1_count_ones_8_0_0_defaul...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_xbip_dsp48e_wrapper_v3_0 [design_1_c_accum_0_0_xbip_dsp48e...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_xbip_dsp48_acc_synth [design_1_c_accum_0_0_xbip_dsp48_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_xbip_dsp48_acc_v3_0_3_viv [design_1_c_accum_0_0_xbip_dsp48_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_xbip_accum_v3_0_3_viv [design_1_c_accum_0_0_xbip_accum_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_c_accum_v12_0_10_viv [design_1_c_accum_0_0_c_accum_v12...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0_c_accum_v12_0_10 [design_1_c_accum_0_0_c_accum_v12...]
+Compiling architecture structure of entity xil_defaultlib.design_1_c_accum_0_0 [design_1_c_accum_0_0_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_xlconstant_1_0 [design_1_xlconstant_1_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_xlconstant_2_0 [design_1_xlconstant_2_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_err
+Built simulation snapshot tb_err_behav

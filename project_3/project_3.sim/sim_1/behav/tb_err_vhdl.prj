@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/design_1_address_counter_0_0/design_1_address_counter_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_c_accum_0_0/design_1_c_accum_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_count_ones_8_0_0/design_1_count_ones_8_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_dr_make8_1_0/design_1_dr_make8_1_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/design_1_serial_pipeline_delay_0_0/design_1_serial_pipeline_delay_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/ip/design_1_xlconstant_2_0/design_1_xlconstant_2_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../project_3.srcs/sim_1/imports/new/tb_Err.vhd"
+
+# Do not sort compile order
+nosort

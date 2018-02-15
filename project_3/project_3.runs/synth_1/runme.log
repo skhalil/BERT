@@ -1,0 +1,565 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 286.816 ; gain = 57.355
+Command: synth_design -top design_1_wrapper -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t-ffg1761'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t-ffg1761'
+INFO: [Common 17-1223] The version limit for your license is '2018.01' and will expire in -8 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8848 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 376.852 ; gain = 73.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2740' bound to instance 'design_1_i' of component 'design_1' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2758]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2901]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2925]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_clk_wiz_1_0_stub.vhdl:20]
+INFO: [Synth 8-638] synthesizing module 'h_bert_imp_GNLW7J' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:30]
+INFO: [Synth 8-3491] module 'design_1_address_counter_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_address_counter_0_0_stub.vhdl:5' bound to instance 'address_counter_0' of component 'design_1_address_counter_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'design_1_address_counter_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_address_counter_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_c_accum_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_c_accum_0_0_stub.vhdl:5' bound to instance 'c_accum_0' of component 'design_1_c_accum_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_accum_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_c_accum_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_count_ones_8_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_count_ones_8_0_0_stub.vhdl:5' bound to instance 'count_ones_8_0' of component 'design_1_count_ones_8_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'design_1_count_ones_8_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_count_ones_8_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_data_recovery_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_data_recovery_0_0_stub.vhdl:5' bound to instance 'data_recovery_0' of component 'design_1_data_recovery_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'design_1_data_recovery_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_data_recovery_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_dr_make8_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dr_make8_0_0_stub.vhdl:5' bound to instance 'dr_make8_0' of component 'design_1_dr_make8_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'design_1_dr_make8_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dr_make8_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_dr_make8_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dr_make8_1_0_stub.vhdl:5' bound to instance 'dr_make8_1' of component 'design_1_dr_make8_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'design_1_dr_make8_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dr_make8_1_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_serial_pipeline_delay_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_serial_pipeline_delay_0_0_stub.vhdl:5' bound to instance 'serial_pipeline_delay_0' of component 'design_1_serial_pipeline_delay_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'design_1_serial_pipeline_delay_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_serial_pipeline_delay_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_vector_logic_1_0_stub.vhdl:5' bound to instance 'util_vector_logic_1' of component 'design_1_util_vector_logic_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_vector_logic_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_1_0_stub.vhdl:5' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_1_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_2_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_2_0_stub.vhdl:5' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_2_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_2_0_stub.vhdl:12]
+INFO: [Synth 8-256] done synthesizing module 'h_bert_imp_GNLW7J' (1#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'h_microblaze_imp_UKW4U6' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2080]
+INFO: [Synth 8-3491] module 'design_1_axi_timer_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'design_1_axi_timer_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2414]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_timer_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2443]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2468]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2481]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2567]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1410]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1DYBF5V' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:282]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1DYBF5V' (2#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_PCHX0I' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:383]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_PCHX0I' (3#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1DCLXC0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:484]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1DCLXC0' (4#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:484]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_Q8HM8X' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:585]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_Q8HM8X' (5#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:585]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_LF8MO1' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1242]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_LF8MO1' (6#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1242]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1952]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (7#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1410]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_U3VR3S' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:669]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:879]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:933]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:961]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1015]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_U3VR3S' (8#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:669]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2722]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'h_microblaze_imp_UKW4U6' (9#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2080]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2978]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_ds_buf_0_0_stub.vhdl:5' bound to instance 'util_ds_buf_0' of component 'design_1_util_ds_buf_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2984]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_ds_buf_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_ds_buf_1_0_stub.vhdl:5' bound to instance 'util_ds_buf_1' of component 'design_1_util_ds_buf_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2990]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_ds_buf_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_vector_logic_0_0_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2996]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_util_vector_logic_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_3_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_3_0_stub.vhdl:5' bound to instance 'xlconstant_3' of component 'design_1_xlconstant_3_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3001]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_3_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlconstant_3_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_0_0_stub.vhdl:5' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3005]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_0_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_2_0_stub.vhdl:5' bound to instance 'xlslice_bit0' of component 'design_1_xlslice_2_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3010]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_2_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_2_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_1_0_stub.vhdl:5' bound to instance 'xlslice_bit1' of component 'design_1_xlslice_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3015]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_1_0' [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/realtime/design_1_xlslice_1_0_stub.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (10#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2758]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (11#1) [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
+WARNING: [Synth 8-3331] design s00_couplers_imp_LF8MO1 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_LF8MO1 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_LF8MO1 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_LF8MO1 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_Q8HM8X has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_Q8HM8X has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_Q8HM8X has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_Q8HM8X has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1DCLXC0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1DCLXC0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1DCLXC0 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1DCLXC0 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_PCHX0I has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_PCHX0I has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_PCHX0I has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_PCHX0I has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1DYBF5V has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1DYBF5V has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1DYBF5V has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1DYBF5V has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 417.930 ; gain = 114.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 417.930 ; gain = 114.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp69/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_axi_intc'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp69/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_axi_intc'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp71/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp71/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp73/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp73/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp75/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/h_microblaze/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp75/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/h_microblaze/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp77/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/h_microblaze/mdm_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp77/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/h_microblaze/mdm_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp79/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp79/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp81/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp81/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp83/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp83/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp85/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp85/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp87/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp87/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp89/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/axi_uartlite_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp89/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/axi_uartlite_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp91/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp91/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/h_microblaze/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp93/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp93/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp95/design_1_xlslice_0_0_in_context.xdc] for cell 'design_1_i/xlslice_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp95/design_1_xlslice_0_0_in_context.xdc] for cell 'design_1_i/xlslice_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp97/design_1_xlslice_1_0_in_context.xdc] for cell 'design_1_i/xlslice_bit1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp97/design_1_xlslice_1_0_in_context.xdc] for cell 'design_1_i/xlslice_bit1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp99/design_1_xlslice_2_0_in_context.xdc] for cell 'design_1_i/xlslice_bit0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp99/design_1_xlslice_2_0_in_context.xdc] for cell 'design_1_i/xlslice_bit0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp101/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/axi_timer_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp101/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/h_microblaze/axi_timer_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp103/design_1_c_accum_0_0_in_context.xdc] for cell 'design_1_i/h_bert/c_accum_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp103/design_1_c_accum_0_0_in_context.xdc] for cell 'design_1_i/h_bert/c_accum_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp105/design_1_count_ones_8_0_0_in_context.xdc] for cell 'design_1_i/h_bert/count_ones_8_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp105/design_1_count_ones_8_0_0_in_context.xdc] for cell 'design_1_i/h_bert/count_ones_8_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp107/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp107/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp111/design_1_data_recovery_0_0_in_context.xdc] for cell 'design_1_i/h_bert/data_recovery_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp111/design_1_data_recovery_0_0_in_context.xdc] for cell 'design_1_i/h_bert/data_recovery_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp113/design_1_dr_make8_0_0_in_context.xdc] for cell 'design_1_i/h_bert/dr_make8_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp113/design_1_dr_make8_0_0_in_context.xdc] for cell 'design_1_i/h_bert/dr_make8_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp115/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/h_bert/util_vector_logic_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp115/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/h_bert/util_vector_logic_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp117/design_1_dr_make8_1_0_in_context.xdc] for cell 'design_1_i/h_bert/dr_make8_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp117/design_1_dr_make8_1_0_in_context.xdc] for cell 'design_1_i/h_bert/dr_make8_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp119/design_1_xlconstant_1_0_in_context.xdc] for cell 'design_1_i/h_bert/xlconstant_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp119/design_1_xlconstant_1_0_in_context.xdc] for cell 'design_1_i/h_bert/xlconstant_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp121/design_1_xlconstant_2_0_in_context.xdc] for cell 'design_1_i/h_bert/xlconstant_2'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp121/design_1_xlconstant_2_0_in_context.xdc] for cell 'design_1_i/h_bert/xlconstant_2'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp123/design_1_serial_pipeline_delay_0_0_in_context.xdc] for cell 'design_1_i/h_bert/serial_pipeline_delay_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp123/design_1_serial_pipeline_delay_0_0_in_context.xdc] for cell 'design_1_i/h_bert/serial_pipeline_delay_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp125/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/h_bert/blk_mem_gen_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp125/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/h_bert/blk_mem_gen_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp127/design_1_xlconstant_3_0_in_context.xdc] for cell 'design_1_i/xlconstant_3'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp127/design_1_xlconstant_3_0_in_context.xdc] for cell 'design_1_i/xlconstant_3'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp131/design_1_address_counter_0_0_in_context.xdc] for cell 'design_1_i/h_bert/address_counter_0'
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp131/design_1_address_counter_0_0_in_context.xdc] for cell 'design_1_i/h_bert/address_counter_0'
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 842.563 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/h_bert/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/h_microblaze/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp67/design_1_clk_wiz_1_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for in_n. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for in_n. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for in_p. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for in_p. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp109/design_1_util_ds_buf_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for out_n[0]. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for out_n[0]. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for out_p[0]. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for out_p[0]. (constraint file  C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/.Xil/Vivado-8564-PHSX-79FJZ32/dcp129/design_1_util_ds_buf_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/address_counter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/c_accum_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/count_ones_8_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/data_recovery_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/dr_make8_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/dr_make8_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/serial_pipeline_delay_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_bert/xlconstant_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/h_microblaze/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_bit0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_bit1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk' to pin 'design_1_i/clk_wiz_1/bbstub_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk90' to pin 'design_1_i/clk_wiz_1/bbstub_clk90/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/notclk' to pin 'design_1_i/clk_wiz_1/bbstub_notclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/notclk90' to pin 'design_1_i/clk_wiz_1/bbstub_notclk90/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/ublaze_clk' to pin 'design_1_i/clk_wiz_1/bbstub_ublaze_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/h_microblaze/mdm_1/Dbg_Clk_0' to pin 'design_1_i/h_microblaze/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/h_microblaze/mdm_1/Dbg_Update_0' to pin 'design_1_i/h_microblaze/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/h_microblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/h_microblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |design_1_axi_gpio_0_0              |         1|
+|2     |design_1_clk_wiz_1_0               |         1|
+|3     |design_1_microblaze_0_xlconcat_0   |         1|
+|4     |design_1_util_ds_buf_0_0           |         1|
+|5     |design_1_util_ds_buf_1_0           |         1|
+|6     |design_1_util_vector_logic_0_0     |         1|
+|7     |design_1_xlconstant_3_0            |         1|
+|8     |design_1_xlslice_0_0               |         1|
+|9     |design_1_xlslice_2_0               |         1|
+|10    |design_1_xlslice_1_0               |         1|
+|11    |design_1_address_counter_0_0       |         1|
+|12    |design_1_blk_mem_gen_0_0           |         1|
+|13    |design_1_c_accum_0_0               |         1|
+|14    |design_1_count_ones_8_0_0          |         1|
+|15    |design_1_data_recovery_0_0         |         1|
+|16    |design_1_dr_make8_0_0              |         1|
+|17    |design_1_dr_make8_1_0              |         1|
+|18    |design_1_serial_pipeline_delay_0_0 |         1|
+|19    |design_1_util_vector_logic_1_0     |         1|
+|20    |design_1_xlconstant_1_0            |         1|
+|21    |design_1_xlconstant_2_0            |         1|
+|22    |design_1_xbar_0                    |         1|
+|23    |design_1_axi_timer_0_0             |         1|
+|24    |design_1_axi_uartlite_0_0          |         1|
+|25    |design_1_mdm_1_0                   |         1|
+|26    |design_1_microblaze_0_0            |         1|
+|27    |design_1_microblaze_0_axi_intc_0   |         1|
+|28    |design_1_rst_clk_wiz_1_100M_0      |         1|
+|29    |design_1_dlmb_bram_if_cntlr_0      |         1|
+|30    |design_1_dlmb_v10_0                |         1|
+|31    |design_1_ilmb_bram_if_cntlr_0      |         1|
+|32    |design_1_ilmb_v10_0                |         1|
+|33    |design_1_lmb_bram_0                |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |design_1_address_counter_0_0_bbox       |     1|
+|2     |design_1_axi_gpio_0_0_bbox              |     1|
+|3     |design_1_axi_timer_0_0_bbox             |     1|
+|4     |design_1_axi_uartlite_0_0_bbox          |     1|
+|5     |design_1_blk_mem_gen_0_0_bbox           |     1|
+|6     |design_1_c_accum_0_0_bbox               |     1|
+|7     |design_1_clk_wiz_1_0_bbox               |     1|
+|8     |design_1_count_ones_8_0_0_bbox          |     1|
+|9     |design_1_data_recovery_0_0_bbox         |     1|
+|10    |design_1_dlmb_bram_if_cntlr_0_bbox      |     1|
+|11    |design_1_dlmb_v10_0_bbox                |     1|
+|12    |design_1_dr_make8_0_0_bbox              |     1|
+|13    |design_1_dr_make8_1_0_bbox              |     1|
+|14    |design_1_ilmb_bram_if_cntlr_0_bbox      |     1|
+|15    |design_1_ilmb_v10_0_bbox                |     1|
+|16    |design_1_lmb_bram_0_bbox                |     1|
+|17    |design_1_mdm_1_0_bbox                   |     1|
+|18    |design_1_microblaze_0_0_bbox            |     1|
+|19    |design_1_microblaze_0_axi_intc_0_bbox   |     1|
+|20    |design_1_microblaze_0_xlconcat_0_bbox   |     1|
+|21    |design_1_rst_clk_wiz_1_100M_0_bbox      |     1|
+|22    |design_1_serial_pipeline_delay_0_0_bbox |     1|
+|23    |design_1_util_ds_buf_0_0_bbox           |     1|
+|24    |design_1_util_ds_buf_1_0_bbox           |     1|
+|25    |design_1_util_vector_logic_0_0_bbox     |     1|
+|26    |design_1_util_vector_logic_1_0_bbox     |     1|
+|27    |design_1_xbar_0_bbox                    |     1|
+|28    |design_1_xlconstant_1_0_bbox            |     1|
+|29    |design_1_xlconstant_2_0_bbox            |     1|
+|30    |design_1_xlconstant_3_0_bbox            |     1|
+|31    |design_1_xlslice_0_0_bbox               |     1|
+|32    |design_1_xlslice_1_0_bbox               |     1|
+|33    |design_1_xlslice_2_0_bbox               |     1|
+|34    |IBUF                                    |     2|
+|35    |OBUF                                    |     1|
++------+----------------------------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-------------------------------------+------+
+|      |Instance                        |Module                               |Cells |
++------+--------------------------------+-------------------------------------+------+
+|1     |top                             |                                     |  1544|
+|2     |  design_1_i                    |design_1                             |  1541|
+|3     |    h_bert                      |h_bert_imp_GNLW7J                    |    86|
+|4     |    h_microblaze                |h_microblaze_imp_UKW4U6              |  1381|
+|5     |      microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0   |   485|
+|6     |      microblaze_0_local_memory |microblaze_0_local_memory_imp_U3VR3S |   494|
++------+--------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 842.563 ; gain = 114.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 842.563 ; gain = 538.934
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+114 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 842.563 ; gain = 555.746
+INFO: [Common 17-1381] The checkpoint 'C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.runs/synth_1/design_1_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 842.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  8 15:10:53 2018...

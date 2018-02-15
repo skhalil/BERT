@@ -1,0 +1,14 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/design_1_address_counter_0_0/design_1_address_counter_0_0_sim_netlist.vhdl,1517265892,vhdl,,,,design_1_address_counter_0_0;design_1_address_counter_0_0_address_counter,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.vhdl,1517265932,vhdl,,,,design_1_blk_mem_gen_0_0;design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width;design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init;design_1_blk_mem_gen_0_0_blk_mem_gen_top;design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6;design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/design_1_serial_pipeline_delay_0_0/design_1_serial_pipeline_delay_0_0_sim_netlist.vhdl,1517265889,vhdl,,,,design_1_serial_pipeline_delay_0_0;design_1_serial_pipeline_delay_0_0_serial_pipeline_delay,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_c_accum_0_0/design_1_c_accum_0_0_sim_netlist.vhdl,1517264364,vhdl,,,,design_1_c_accum_0_0;design_1_c_accum_0_0_c_accum_v12_0_10;design_1_c_accum_0_0_c_accum_v12_0_10_viv;design_1_c_accum_0_0_xbip_accum_v3_0_3_viv;design_1_c_accum_0_0_xbip_dsp48_acc_synth;design_1_c_accum_0_0_xbip_dsp48_acc_v3_0_3_viv;design_1_c_accum_0_0_xbip_dsp48e_wrapper_v3_0,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_count_ones_8_0_0/design_1_count_ones_8_0_0_sim_netlist.vhdl,1517264362,vhdl,,,,design_1_count_ones_8_0_0;design_1_count_ones_8_0_0_count_ones_8,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_dr_make8_1_0/design_1_dr_make8_1_0_sim_netlist.vhdl,1517265823,vhdl,,,,design_1_dr_make8_1_0;design_1_dr_make8_1_0_dr_make8,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0_sim_netlist.vhdl,1517265888,vhdl,,,,design_1_util_vector_logic_1_0;design_1_util_vector_logic_1_0_util_vector_logic_v2_0_1_util_vector_logic,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_sim_netlist.vhdl,1517265821,vhdl,,,,design_1_xlconstant_1_0,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/ip/design_1_xlconstant_2_0/design_1_xlconstant_2_0_sim_netlist.vhdl,1517265821,vhdl,,,,design_1_xlconstant_2_0,,,,,,,,
+C:/SharedProjects/Sadias_Directory/BERT/project_3/project_3.srcs/sim_1/imports/new/tb_Err.vhd,1518471931,vhdl,,,,tb_err,,,,,,,,
